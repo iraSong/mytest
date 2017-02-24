@@ -1,0 +1,23 @@
+{
+  "name": "mytest",
+  "version": "1.0.0",
+  "description": "测试",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx -t pre,asset,babel-asset,image,serve-client -e development",
+    "build-dev": "npx -t pre,asset,babel-asset,image,webpack,postcss -e development",
+    "build-exp": "npx -t pre,asset,babel-asset,image,webpack,postcss -e experiment",
+    "build": "npx -t pre,asset,babel-asset,image,webpack,postcss -e production",
+    "pack": "npx pack",
+    "upload": "npx upload",
+    "clean": "npx clean"
+  },
+  "author": "songwuhong",
+  "license": "MIT",
+  "dependencies": {
+    "es6-promise": "^4.0.5",
+    "extend": "^3.0.0"
+  },
+  "devDependencies": {
+  }
+}

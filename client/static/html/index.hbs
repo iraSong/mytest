@@ -1,0 +1,22 @@
+{{! html 头部 }}
+{{! title 参数定义页面标题 }}
+{{! style 参数指定引入的样式文件 }}
+{{! 自动设置 documentElement 的 font-size 值 }}
+{{> start title="某某活动" style="/css/index.css" }}
+
+<i class="slogan"></i>
+<div class="cnt">这是活动的主体部分</div>
+
+{{! 金贝塔下载地址都使用 http://www.igoldenbeta.com/portal/basket/download/qrc/website_mobile，此下载地址是可以区分渠道的 }}
+<a href="http://www.igoldenbeta.com/portal/basket/download/qrc/website_mobile" class="btn">下载金贝塔</a>
+
+{{! 打开、下载的固定浮层 }}
+{{> goldenbeta-bar }}
+
+{{! 如果有统计需求，此处应当 include piwik，在 config.json 里定义 siteId 及 piwik 路径 }}
+<script src="{{config 'client.publicPath'}}/static/load-piwik.js?_={{config 'version'}}"></script>
+
+{{! html 尾部，将自动注入与 hbs 文件匹配的 js。在这里 js/index.wp.js 与 html/index.hbs 是匹配的 }}
+{{! 如果在项目里使用 jquery，请 include end-jquery }}
+{{! script 参数指定引入的 js 文件 }}
+{{> end }}

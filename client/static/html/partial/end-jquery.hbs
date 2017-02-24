@@ -1,0 +1,7 @@
+  </div>
+  <script src="{{config 'client.publicPath'}}/static/jquery.min.js?_={{config 'version'}}"></script>
+  {{#if script}}
+    <script src="{{config 'client.publicPath'}}/static{{script}}?_={{config 'version'}}"></script>
+  {{/if}}
+</body>
+</html>

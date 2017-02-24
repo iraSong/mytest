@@ -1,0 +1,87 @@
+.goldenbeta-bar {
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 33px;
+
+  background: #fff resolve(goldenbeta-bar-bg.png) left top no-repeat;
+  background-size: 98px auto;
+  box-shadow: 0 0 7px 0 #999;
+
+  align-items: center;
+  &-left {
+    flex: 1;
+  }
+  &-right {
+    width: 220px;
+
+    text-align: right;
+  }
+  &-txt {
+    font-size: 26px;
+    line-height: 1;
+
+    letter-spacing: .55px;
+
+    color: #ff8300;
+    &-sub {
+      font-size: 20px;
+      line-height: 1;
+
+      margin-top: 10px;
+
+      letter-spacing: .42px;
+
+      color: #666;
+    }
+  }
+  &-split {
+    display: inline-block;
+
+    width: 2px;
+    height: 21px;
+    margin: 0 .6em;
+
+    vertical-align: bottom;
+
+    background: #666;
+  }
+  &-btn {
+    font-size: 24px;
+    line-height: 42px;
+
+    display: inline-block;
+
+    width: 86px;
+    height: 42px;
+
+    text-align: center;
+
+    color: #ff8300;
+    border: 2px solid #ff8300;
+    border-radius: 8px;
+    &-open {
+      margin-right: 12px;
+
+      color: #fff;
+      background: #ff8300;
+    }
+  }
+}
+.desktop,
+.goldbeta {
+  .goldenbeta-bar {
+    display: none;
+  }
+}
+.wechat.android {
+  .goldenbeta-bar-btn-open {
+    display: none;
+  }
+}

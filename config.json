@@ -1,0 +1,47 @@
+{
+  "ftp": {
+    "host": "10.31.74.103",
+    "port": 22,
+    "username": "root",
+    "password": "First@2015++",
+    "remotePath": "/home/frontend/workspace/activity/demo",
+    "patterns": ["client/dist"],
+    "keepFinder": false
+  },
+  "entryPrefixer": "",
+  "jsdoc": false,
+  "postcss": {
+    "postcss-pxtorem": {
+      "rootValue": 32
+    }
+  },
+  "webpack": {
+    "banner": "(c) 2016 iGoldenBeta Financial Technology Co.,Ltd"
+  },
+  "default": {
+    "client": {
+      "port": 9000,
+      "htmlPath": "http://10.31.74.103:9000/activity/demo",
+      "publicPath": "http://10.31.74.103:9000/activity/demo"
+    },
+    "apiRoot": "http://10.31.90.114:8388/path/to/activity/api/path",
+    "piwikPath": "//10.31.90.114:8889/piwik",
+    "siteId": 11
+  },
+  "experiment": {
+    "client": {
+      "htmlPath": "http://hdbeta.exp.igoldenbeta.com/activity/demo",
+      "publicPath": "http://static.exp.igoldenbeta.com/activity/demo"
+    },
+    "apiRoot": "http://10.31.90.114:8388/path/to/activity/api/path"
+  },
+  "production": {
+    "client": {
+      "htmlPath": "http://hdbeta.igoldenbeta.com/activity/demo",
+      "publicPath": "http://static.igoldenbeta.com/activity/demo"
+    },
+    "apiRoot": "http://10.31.90.114:8388/path/to/activity/api/path",
+    "piwikPath": "//analytics.igoldenbeta.com",
+    "siteId": 11
+  }
+}
